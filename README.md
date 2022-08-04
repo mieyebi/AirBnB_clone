@@ -10,3 +10,6 @@ objects and objects are reloaded on starting of
 console or using any module from models package.
 If you wish, you can change default file path
 to your choice in models/engine/file_storage.py
+### Console
+a simple command line tool used to manipulate objects
+start by ```./console.py```
