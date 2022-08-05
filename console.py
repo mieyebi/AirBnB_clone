@@ -38,6 +38,9 @@ class HBNBCommand(cmd.Cmd):
             return line
         if line[-1] == ")":
             line_split_by_dot = line.split(".")
+            if len(line_split_by_dot) < 2:
+                self.default(line)
+                return ""
             if line_split_by_dot[1] == "all()":
                 line = "{} {}".format(line_split_by_dot[1].strip("()"),
                                       line_split_by_dot[0])
@@ -125,8 +128,8 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
 
     def do_show(self, arg):
-        """rints the string representation of an instance
-        based on the class name and its id"""
+        """prints the string representation of an instance \
+based on the class name and its id"""
         if arg:
             args = arg.split()
             if args[0] not in self.models:
