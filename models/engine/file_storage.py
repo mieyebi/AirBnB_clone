@@ -33,8 +33,9 @@ class FileStorage:
 
     def reload(self):
         """deserializes the JSON file to __objects"""
-        import os
-        if (os.path.isfile(self.__file_path)):
+        # import os
+        # if (os.path.isfile(self.__file_path)):
+        try:
             with open(self.__file_path, encoding="utf-8") as f:
                 dct = json.loads(f.read())
                 self.__objects = {}
@@ -62,3 +63,5 @@ class FileStorage:
                         self.__objects[item] = Place(**dct[item])
                     elif cls == "Review":
                         self.__objects[item] = Review(**dct[item])
+        except Exception:
+            pass
