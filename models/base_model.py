@@ -11,7 +11,7 @@ from models import storage
 class BaseModel:
     """BaseModel class: all classes inherits this"""
 
-    class_name = "BaseModel"
+    # class_name = "BaseModel"
 
     def __init__(self, *args, **kwargs):
         if kwargs:
@@ -34,7 +34,7 @@ class BaseModel:
 
     def __str__(self):
         """string representation of instance"""
-        string = "[{}] ({}) {}".format(self.class_name,
+        string = "[{}] ({}) {}".format(self.to_dict().__class__,
                                        self.id,
                                        self.__dict__)
         return string
@@ -48,7 +48,7 @@ class BaseModel:
         for item in to_copy:
             dct[item] = to_copy[item]
 
-        dct["__class__"] = self.class_name
+        dct["__class__"] = "BaseModel"
         dct["created_at"] = self.created_at.isoformat()
         dct["updated_at"] = self.updated_at.isoformat()
         return dct
