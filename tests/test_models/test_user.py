@@ -11,7 +11,7 @@ class TestUser(unittest.TestCase):
 
     def test_class_name(self):
         """test class name"""
-        self.assertEqual("User", User.class_name)
+        self.assertEqual("User", User.__name__)
 
 
 if __name__ == "__main__":
