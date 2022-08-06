@@ -8,7 +8,6 @@ from models.base_model import BaseModel
 class User(BaseModel):
     """defines individual users"""
 
-    class_name = "User"
     email = ""
     password = ""
     first_name = ""

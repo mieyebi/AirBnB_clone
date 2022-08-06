@@ -8,6 +8,5 @@ from models.base_model import BaseModel
 class City(BaseModel):
     """defines individual cities"""
 
-    class_name = "City"
     state_id = ""
     name = ""

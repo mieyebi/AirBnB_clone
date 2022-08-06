@@ -8,5 +8,4 @@ from models.base_model import BaseModel
 class State(BaseModel):
     """defines individual states"""
 
-    class_name = "State"
     name = ""

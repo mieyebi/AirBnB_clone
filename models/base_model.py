@@ -11,8 +11,6 @@ from models import storage
 class BaseModel:
     """BaseModel class: all classes inherits this"""
 
-    # class_name = "BaseModel"
-
     def __init__(self, *args, **kwargs):
         if kwargs:
             for item in kwargs:
