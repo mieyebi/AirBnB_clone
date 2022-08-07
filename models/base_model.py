@@ -38,7 +38,7 @@ class BaseModel:
         return string
 
     def to_dict(self):
-        """returns a dictionary containing all
+        """returns the dictionary containing all
         keys/values of __dict__ of the instance
         """
         dct = {}
