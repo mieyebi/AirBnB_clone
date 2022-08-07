@@ -5,7 +5,7 @@ to set up classes for airbnb-mimic backend.
 checkout models directory for different classes
 available.
 ### Default Persistance Engine
-The json file named file.json is used to persist created
+json file named file.json is used to persist created
 objects and objects are reloaded on starting of 
 console or using any module from models package.
 If you wish, you can change default file path
