@@ -92,7 +92,8 @@ class HBNBCommand(cmd.Cmd):
                 id_ = id_.strip("'")
                 idx += 1
                 args = id_and_args[idx:]
-                args = args.strip(" ")
+                args = args.strip(" '")
+                args = args.strip('"')
                 # id_and_args_list = id_and_args.split(",")
                 # id_ = id_and_args_list[0].strip('"')
                 # args = id_and_args_list[1]
