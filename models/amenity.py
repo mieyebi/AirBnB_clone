@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""amenity module: contains Amenity class"""
+"""amenity module: contains the Amenity class"""
 
 
 from models.base_model import BaseModel
