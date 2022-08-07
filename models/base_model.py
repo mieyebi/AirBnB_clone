@@ -9,7 +9,7 @@ from models import storage
 
 
 class BaseModel:
-    """BaseModel class: all classes inherits this"""
+    """BaseModel class: all other classes inherits this"""
 
     def __init__(self, *args, **kwargs):
         if kwargs:
