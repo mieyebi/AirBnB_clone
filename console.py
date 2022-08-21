@@ -6,11 +6,11 @@ import cmd
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
-from models import storage
 from models.city import City
 from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
+from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
@@ -92,7 +92,8 @@ class HBNBCommand(cmd.Cmd):
                 id_ = id_.strip("'")
                 idx += 1
                 args = id_and_args[idx:]
-                args = args.strip(" ")
+                args = args.strip(" '")
+                args = args.strip('"')
                 # id_and_args_list = id_and_args.split(",")
                 # id_ = id_and_args_list[0].strip('"')
                 # args = id_and_args_list[1]

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""runs the initialization code for package"""
+"""runs initialization code for package"""
 
 
 from models.engine.file_storage import FileStorage

@@ -1,5 +1,5 @@
 # airbnb_test_console_v1
-The codes in this repo are yet to be finalised
+codes in this repo are yet to be finalised
 however, repo contains python packages and modules
 to set up classes for airbnb-mimic backend.
 checkout models directory for different classes

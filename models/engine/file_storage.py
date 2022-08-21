@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module contains class FileStorage serialization and
+"""module contains class FileStorage that serialization and
 deserialization of object instances to and from a file"""
 
 

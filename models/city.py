@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""city module: contains the city class"""
+"""city module: contains city class"""
 
 
 from models.base_model import BaseModel
